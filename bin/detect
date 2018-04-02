@@ -2,7 +2,7 @@
 # bin/detect <build-dir>
 set -e
 
-build=$(cd "$1/" && pwd)
+build=$(cd "$1/app/" && pwd)
 
 if test -f "${build}/Gopkg.lock" || #dep
    test -f "${build}/Godeps/Godeps.json" || # godeps
